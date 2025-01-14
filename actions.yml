@@ -1,8 +1,0 @@
-name: 'Simple print action'
-description: 'Prints hello world message'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-branding:
-  icon: 'mic'
-  color: 'blue'
