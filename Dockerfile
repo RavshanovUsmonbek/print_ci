@@ -1,5 +1,4 @@
 FROM python:3-slim
 WORKDIR /github/workspace
-COPY . .
-RUN ls -la .
+COPY ./script.py ./script.py
 CMD [ "python", "./script.py" ]
