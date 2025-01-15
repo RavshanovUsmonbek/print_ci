@@ -1,11 +1,9 @@
-# Use an official Python runtime as a parent image
-FROM python:3.12-slim
-
+FROM python:3-slim
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /
 
 # Copy the Python script into the container
-COPY script.py .
+COPY script.py /script.py
 
 # Specify the default command to run the script
-CMD ["python", "script.py"]
+ENTRYPOINT ["python", "/script.py"]
